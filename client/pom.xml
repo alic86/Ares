@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>config</artifactId>
+    <artifactId>client</artifactId>
 
-    <name>config</name>
+    <name>client</name>
     <url>http://www.alic.com</url>
 
     <properties>

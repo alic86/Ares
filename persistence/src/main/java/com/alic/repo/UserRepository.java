@@ -1,7 +1,6 @@
 package com.alic.repo;
 
 import com.alic.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
