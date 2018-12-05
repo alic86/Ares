@@ -1,2 +1,14 @@
-.idea/
+.#*
+*#
+*~
+target
+.springBeans
+.settings
+.classpath
+.project
 *.iml
+*.ipr
+*.iws
+.idea
+credentials.yml
+.DS_Store

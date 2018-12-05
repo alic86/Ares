@@ -6,18 +6,22 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.server.ErrorPage;
 import org.springframework.boot.web.server.ErrorPageRegistrar;
 import org.springframework.boot.web.server.ErrorPageRegistry;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * Hello world!
+ * 应用入口
  *
  */
 @SpringBootApplication
+@EnableJpaRepositories
 public class App extends WebMvcConfigurerAdapter implements ErrorPageRegistrar {
     public static void main( String[] args ) {
-        SpringApplication.run(App.class);
+        SpringApplication application = new SpringApplication();
+        application.setWebEnvironment(true);
+        application.run(App.class);
     }
 
     @Override

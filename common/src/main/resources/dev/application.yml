@@ -1,0 +1,6 @@
+management:
+  endpoints:
+    web:
+      cors:
+        allowed-origins: http://crcc.com
+        allowed-methods: GET,POST

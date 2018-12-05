@@ -1,6 +1,5 @@
 package com.alic.handler;
 
-import com.alic.repo.UserRepository;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,9 +8,5 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class UserHandler {
-    private final UserRepository userRepository;
 
-    public UserHandler(UserRepository userRepository){
-        this.userRepository = userRepository;
-    }
 }
